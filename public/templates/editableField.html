@@ -1,0 +1,5 @@
+<input ng-if="$ctrl.editMode" type=text ng-model="$ctrl.content"></input>
+<button ng-if="$ctrl.editMode" ng-click="$ctrl.save($ctrl.content)">Save</button>
+
+<span ng-if="!$ctrl.editMode">{{$ctrl.content}}</span>
+<button ng-if="!$ctrl.editMode" ng-click="$ctrl.toggleEdit()">Edit</button>

@@ -1,0 +1,7 @@
+<div>
+  <span>Name: </span><editable-field content="$ctrl.hero.name" on-update="$ctrl.updated(value)"></editable-field>
+</div>
+<div>
+  <span>Secret Identity: </span><editable-field content="$ctrl.hero.secretIdentity" on-update="$ctrl.updated(value)"></editable-field>
+</div>
+<button ng-click="$ctrl.delete()">Delete</button>

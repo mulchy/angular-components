@@ -1,0 +1,8 @@
+<label>Name:</label>
+<input type="text" ng-model="$ctrl.hero.name">
+<label>Secret Identity:</label>
+<input type="text" ng-model="$ctrl.hero.secretIdentity">
+<button ng-click="$ctrl.addHero($ctrl.hero)">Add hero</button>
+<ul ng-repeat="specificHero in $ctrl.heroes">
+  <hero-detail hero="specificHero" on-delete="$ctrl.deleted(hero)"></hero-detail>
+</ul>
